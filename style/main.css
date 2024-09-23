@@ -1,0 +1,123 @@
+:root {
+    --btn: #e4cbff;
+    --primary: #3295a2;
+    --secondary: #09494c;
+    --dark: #111111;
+    --white: #ffffff;
+    --grey: #999999;
+    --mediumgrey: #cccccc;
+    --lightgrey: #f5f5f5db;
+    --background: #caa478;
+    --button-font-size: 1rem;
+    --button-radius: 5px;
+    --button-padding: 0.5rem 1rem;
+}
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+footer {
+    text-align: center;
+}
+body {
+    background: var(--background);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dark);
+    text-align: left;
+    max-width: 80%;
+    margin: auto;
+}  
+.hidden {
+    display: none;
+}
+#page_container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#image_container {
+    width: fit-content;
+}
+input {
+    border: 1px solid var(--grey);
+    background-color: var(--lightgrey);
+    border-radius: 4px;
+    padding: 12px 12px;
+}
+.card {
+    background-color: var(--lightgrey);
+    border-radius: var(--button-radius);
+    border: 1px solid var(--mediumgrey);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 1rem;
+}
+.btn {
+    font-weight: bold;
+    font-size: var(--button-font-size);
+    font-family: 'Courier New', Courier, monospace;
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    background-color: var(--btn);
+    color: var(--dark);
+}
+.header {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.header a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    animation: rainbowCycle 2s infinite;
+}
+.delete_icon {
+    background-image: url(../media/delete-icon.png);
+}
+.delete_icon:hover {
+    cursor: pointer;
+}
+.nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+.icon_small {
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+@keyframes rainbowCycle {
+    0% {
+      color: red;
+    }
+    20% {
+      color: orange;
+    }
+    40% {
+        color: rgb(203, 203, 8);
+    }
+    60% {
+        color: green;
+    }
+    80% {
+        color: blue;
+    }
+    100% {
+        color: purple;
+    }
+  }

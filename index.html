@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>The Web Gallery</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <link href="style/images.css" rel="stylesheet" type="text/css" />
+    <link href="style/comments.css" rel="stylesheet" type="text/css" />
+    <link href="style/form.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="js/main.mjs" defer></script>  
+  </head>
+  <body>
+    <div class="header">
+        <a href="/" class="title">The Web Gallery</a>
+        <button id="btn_upload_image" class="btn">Upload Image</button>
+    </div>
+    <div id="upload_image_form_container" class="hidden card">
+        <div id="image_label">Image Information</div>
+        <form class="complex_form" id="upload_image_form">
+            <div class="inline_input">
+                <div>Image Title</div>
+                <input type="text" class="form_element" id="image_title" name="image_title" maxlength="30" required />
+            </div>
+            <div class="inline_input">
+                <div>Author Name</div>
+                <input type="text" class="form_element" id="image_author_name" name="image_author_name" maxlength="30" required />
+            </div>
+            <div class="inline_input">
+                <div>Image URL</div>
+                <input type="url" class="form_element" id="image_url" name="image_url" required />
+            </div>
+            <input type="submit" class="btn" id="upload_image" value="Upload">
+        </form>
+    </div>
+    <div id="page_container">
+        <div id="image_container"></div>
+        <div id="comments_container" class="card"></div>
+    </div>
+    <footer>
+        <a href="credits.html">credits</a>
+    </footer>
+  </body>
+</html>

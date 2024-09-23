@@ -1,0 +1,28 @@
+.inline_input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.inline_input div {
+    margin-right: 1rem;
+    width: 120px;
+}
+.inline_input input, .inline_input select {
+    flex: 1;
+}
+#image_label {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 18px
+}
+#comment_content_label, #comment_author_name_label {
+    width: 70px;
+    font-weight: normal;
+}
+#comment_label {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--grey);
+}

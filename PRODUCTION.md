@@ -1,1 +1,1 @@
-mywebapplication.example.com
+https://cl10047.github.io/
